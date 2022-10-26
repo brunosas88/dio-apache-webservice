@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  apache-webservice:
+    image: httpd
+    container_name: apache-webservice
+    ports:
+    - '80:80'
+    volumes:
+    - ./ninom-html:/usr/local/apache2/htdocs
